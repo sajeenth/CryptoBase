@@ -1,6 +1,9 @@
+CryptoBase is a web application that provides users with up to date market insights (Price, Volume, Market Cap) on over 100+ cryptocurrencies.
+
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). CryptoBase is a web application that provides users with up to date market insights (Price, Volume, Market Cap) on over 100+ cryptocurrencies.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 ## Available Scripts
 
