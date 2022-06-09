@@ -1,4 +1,5 @@
 CryptoBase is a web application that provides users with up to date market insights (Price, Volume, Market Cap) on over 100+ cryptocurrencies. Click the link below!
+
 https://cryptobase-47408.web.app/
 
 # Getting Started with Create React App
