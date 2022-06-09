@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {  
+  height: 100vh;
+  width: 100%;
+
+}
+
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  scroll-behavior: smooth;
+  margin:0; 
+  background:-moz-linear-gradient(0deg, rgba(255, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 51%); /* ff 3.6+ */
+  background:-webkit-linear-gradient(0deg, rgba(255, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 51%); /* safari 5.1+,chrome 10+ */
+  background:-ms-linear-gradient(0deg, rgba(255, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 51%); /* ie 10+ */
+  background: linear-gradient(0deg, rgba(255, 213, 255, 1) 0%, rgba(255, 255, 255, 1) 51%); /* global 94%+ browsers support */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+.App h1 {
+  position: relative;
+  text-align: center;
+  font-size: 75px;
+}
+
+.SInput {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Search input {
+  width: 600px;
+  height: 45px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 0;
+  border-radius: 3px;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  
+}
+
+.dataResult {
+  margin-top: -6px;
+  height: 270px;
+  width: 585px;
+  background-color: rgb(248, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;  
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  position: relative;
+}
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.move {
+  padding: 270px 0;
+}
+
+.new {
+  display: none;
+  margin: auto;
+}
+
+.coin {
+  display: inline-block;
+  width: 50px; 
+  margin: 40px 135px 20px 175px;
+}
+
+.coin p {
+  text-align: center;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.coin img:hover {
+  cursor: pointer;
+}
+
+.showCoin {
+  display: none;
+}
+.coinName {
+  position: relative;
+  margin-top: -190px;
+  text-align: center;
+  margin-left: 60px;
+  width: 250px;
+}
+
+.coinName h2 {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.coinName p {
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 10px;
+}
+
+.headings {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: -310px 80px 130px;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #f6dbfc;
+  overflow: hidden;
+}
+
+th {
+  padding: 1rem 2rem;
+  font-size: 18px;
+}
+
+td {
+  padding: 1rem 2rem;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
+
+
+.coinColorR {
+  color: #f00606;
+}
+
+.coinColorG {
+  color: #11d811;
+}
+
+.coinHigh {
+  text-align: center;
+}
+
+.coinLow {
+  text-align: center;
+}
+
+#coinTitle {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  margin-top: -80px;
+  margin-bottom: 40px;
+}
+
+.coinInfo form {
+  position: absolute;
+  margin: 60px 50px;
+}
+
+.coinInfo input {
+  width: 130%;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 3px 7px #727272; 
+  overflow: hidden;
+}
+
+.coinInfo input:hover {
+  background-color: #faedf8; 
+}
+
+.container {
+  margin-top: -35px;
+  height: 420px;
+  width: 640px;
+  background-color: rgb(255, 244, 255);
+  box-shadow: 0 5px 10px #727272;
+  overflow: hidden;
+  overflow-y: scroll; 
+  scroll-snap-type: y mandatory; 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: rgb(221, 189, 247);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 126, 155);
+  border-radius: 20px;
+}
+
+.coinNews {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  scroll-snap-align: start;
+}
+
+.coinNews:hover {
+  cursor: pointer;
+}
+
+.coinNews h3 {
+  text-align: center;
+  padding: 10px 10px;
+
+}
+
+.coinNews img {
+  position: relative;
+  padding: 0px 63px ;
+  width:80%
+}
+
+.coinNews p {
+  font-size: 15px;
+  padding: 10px;
+  margin: auto 20px -15px;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 1650px) {
+  .Search {
+    margin-top: -300px;
+  }
+  .coinName {
+    margin-top: -250px;
+  }
+
+  .coinInfo input {
+    width: 110%;
+  }
+
+  th {
+    padding: 1px 1px;
+    font-size: 14px;
+  }
+
+  td {
+    padding: 1rem 1rem;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .dataResult {
+    z-index: 1;
+  }
+
+  .coinName {
+    position: relative;
+    margin-top: -210px;
+  }
+
+  .coinName img{
+    max-width: 150px; 
+    height: auto;
+  }
+
+  .coinName h2 {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+  
+  .coinName p {
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .coinInfo input {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: -30px;
+  }
+  
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+  table {
+    table-layout: fixed;
+    width: 350px;
+    margin-top: 100px;
+  }
+
+  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  tr { 
+    box-shadow: 0 5px 10px #f6dbfc;
+    overflow: hidden;
+  }
+
+  td:nth-of-type(1) { 
+    padding-left: 62%;
+  }
+
+  td:nth-of-type(2) {
+    padding-left: 68%;
+  }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #f6dbfc; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 20px;
+		left: 6px;
+		width: 100%; 
+	}
+	
+	td:nth-of-type(1):before { content: "Price"; }
+	td:nth-of-type(2):before { content: "24h %"; }
+	td:nth-of-type(3):before { content: "Price High 24h"; }
+	td:nth-of-type(4):before { content: "Price Low 24h"; }
+	td:nth-of-type(5):before { content: "Market Cap"; }
+	td:nth-of-type(6):before { content: "Volume(24h)"; }
+}
+
+@media only screen and (max-width: 950px) {
+  .coinName {
+    margin: auto;
+    width: 50%;
+    margin-top: -220px;
+    padding: 10px;
+    margin-bottom: 290px;     
+    position: relative;
+  }
+
+  .coinName h2{
+    font-size: 45px;
+  }
+
+  .coinName p{
+    font-size: 35px;
+  }
+
+  .coinName img {
+    max-width: 350px; 
+    height: auto;
+  }
+
+  .coinInfo form {
+    position: relative;
+    margin: -290px 50px 290px;
+  }
+
+  table {
+    box-shadow: 0 3px 15px hsl(289, 100%, 84%);
+    overflow: hidden;
+  }
+
+  .container {
+    width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .coinNews img {
+    width:70%
+  }
+
+  .move h1 {
+    font-size: 50px;
+  }
+
+  .dataResult {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .move {
+    max-width: 75%;
+  }
+
+  .move h1 {
+    font-size: 240%;
+  }
+
+  .dataResult {
+    width: 300px;
+  }
+
+  .coinName {  
+    width: 300px;
+    height: 200px;
+    margin-bottom: 500px;
+  }
+
+
+  .container {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+
+}
