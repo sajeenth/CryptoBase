@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>CryptoBase</title>
+    <script defer="defer" src="/static/js/main.7987b0e0.js"></script>
+    <link href="/static/css/main.1d41a711.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script
+      async="true"
+      src="https://cse.google.com/cse.js?cx=e3fd4db97eca71a46"
+    ></script>
+    <div class="gcse-searchresults-only"></div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
